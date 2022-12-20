@@ -31,3 +31,9 @@ I wanted to seperate the TV Shows from the Movies using SQL. Most movies are ove
 
 ### Visualizations
 
+**Here are the visualizations I created**
+
+![image](https://user-images.githubusercontent.com/30465635/208780642-9f664796-f9f6-417e-afcb-b287c555b163.png)
+
+![image](https://user-images.githubusercontent.com/30465635/208780881-696364c1-ea62-421a-a26a-846f51113b32.png)
+
