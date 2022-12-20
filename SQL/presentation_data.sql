@@ -1,4 +1,3 @@
-
 -- This is the view I created to create a table to query later
 -- But you can create a CTE as well
 SELECT Profile_Name,
