@@ -1,7 +1,7 @@
 # netflix-project
 >Downloaded my personal Netflix data to analyze movies and tv shows screen time
 
-I got the idea from a DataQuest email I received a while ago, where you can download your personal Netflix streaming history data. So I wanted to analyze how many minutes were spent watching Movies and TV Shows per Profile by downloading the data and uploading it on BigQuery and visualizing it on PowerBI
+I got the idea from a DataQuest email I received a while ago, where you can download your personal Netflix streaming history data. So I wanted to analyze how many hours were spent watching Movies and TV Shows per Profile by downloading the data and uploading it on BigQuery and visualizing it on PowerBI
 
 ### Getting the data
 
@@ -27,13 +27,15 @@ Once you receive the file unzip the folder and you will find multiple folders un
 
 ### Exploratory data analysis
 
-I wanted to seperate the TV Shows from the Movies using SQL. Most movies are over an hour and most TV Shows are about 45 minutes long, but that is not the case every time and there are times were you don't complete a movie or a TV Show. I had to do exploratory data analysis using SQL to find all the TV Shows and Movies and to categorize them in a column called Entertainment_Type. There were no TIME_FUNCTION in BigQuery to add the time duration of each tv show or movie streamed, so I extracted the hour, minute, seconds and created a column for the each. Converted the hours and seconds to minutes and created a new column called total_running_minutes.
+I wanted to seperate the TV Shows from the Movies using SQL. Most movies are over an hour and most TV Shows are about 45 minutes long, but that is not the case every time and there are times were you don't complete a movie or a TV Show. I had to do exploratory data analysis using SQL to find all the TV Shows and Movies and to categorize them in a column called Entertainment_Type. There were no TIME_FUNCTION in BigQuery to add the time duration of each tv show or movie streamed, so I extracted the hour, minute, seconds and created a column for the each. Converted the hours and seconds to minutes and created a new column called total_running_minutes. In PowerBI I transformed the total_running_minutes to total_hours in a seperate column.
 
 ### Visualizations
 
 **Here are the visualizations I created**
 
-![image](https://user-images.githubusercontent.com/30465635/208780642-9f664796-f9f6-417e-afcb-b287c555b163.png)
+![image](https://user-images.githubusercontent.com/30465635/208797005-1c5ec96e-becf-41f1-8d03-d6dd2b966abc.png)
 
-![image](https://user-images.githubusercontent.com/30465635/208780881-696364c1-ea62-421a-a26a-846f51113b32.png)
+
+![image](https://user-images.githubusercontent.com/30465635/208797188-e304fad9-e355-44fa-a780-d5f02ea10fb5.png)
+
 
