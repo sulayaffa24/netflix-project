@@ -27,7 +27,7 @@ Once you receive the file unzip the folder and you will find multiple folders un
 
 ### Exploratory data analysis
 
-I wanted to seperate the TV Shows from the Movies using SQL. Most movies are over an hour and most TV Shows are about 45 minutes long, but that is not the case every time and there are times were you don't complete a movie or a TV Show. I had to do exploratory data analysis using SQL to find all the TV Shows and Movies and to categorize them in a column called Entertainment_Type. There were no TIME_FUNCTION in BigQuery to add the time duration of each tv show or movie streamed, so I extracted the hour, minute, seconds and created a column for the each. Converted the hours and seconds to minutes and created a new column called total_running_minutes. In PowerBI I transformed the total_running_minutes to total_hours in a seperate column.
+I wanted to seperate the TV Shows from the Movies using SQL. Most movies are over an hour and most TV Shows are about 45 minutes long, but that is not the case every time and there are times where you don't complete a movie or a TV Show. I had to do exploratory data analysis using SQL to find all the TV Shows and Movies and categorize them in a column called Entertainment_Type. There were no TIME_FUNCTION in BigQuery to add the time duration of each tv show or movie streamed, therefore I extracted the hour, minute, seconds and created a column for the each. Converted the hours and seconds to minutes and created a new column called total_running_minutes. In PowerBI I transformed the total_running_minutes to total_hours in a seperate column.
 
 ### Visualizations
 
