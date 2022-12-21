@@ -36,6 +36,9 @@ I wanted to seperate the TV Shows from the Movies using SQL. Most movies are ove
 ![image](https://user-images.githubusercontent.com/30465635/208797005-1c5ec96e-becf-41f1-8d03-d6dd2b966abc.png)
 
 
+*We can see that Don't Blame the Kid is the most watched Movie in Profile_Name: Sulayman in the Country: US in terms of hours*
+
+
 ![image](https://user-images.githubusercontent.com/30465635/208797188-e304fad9-e355-44fa-a780-d5f02ea10fb5.png)
 
 
