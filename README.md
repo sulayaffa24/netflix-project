@@ -31,15 +31,14 @@ I wanted to seperate the TV Shows from the Movies using SQL. Most movies are ove
 
 ### Visualizations
 
-**Here are the visualizations I created**
+**Here are the visualizations I created:**
+
+*We can see that Don't Blame the Kid is the most watched Movie in Profile_Name: Sulayman in the Country: US in terms of hours*
 
 ![image](https://user-images.githubusercontent.com/30465635/208797005-1c5ec96e-becf-41f1-8d03-d6dd2b966abc.png)
 
 
-*We can see that Don't Blame the Kid is the most watched Movie in Profile_Name: Sulayman in the Country: US in terms of hours*
-
+*We can see that Ozark Season 3: Su Casa Es Mi Casa (Episode 6) is the most watched TV Show episode in Profile_Name: MASTA YODA in the Country: US in terms of hours*
 
 ![image](https://user-images.githubusercontent.com/30465635/208797188-e304fad9-e355-44fa-a780-d5f02ea10fb5.png)
 
-
-*We can see that Ozark Season 3: Su Casa Es Mi Casa (Episode 6) is the most watched TV Show episode in Profile_Name: MASTA YODA in the Country: US in terms of hours*
