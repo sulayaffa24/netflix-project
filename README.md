@@ -40,5 +40,4 @@ I wanted to seperate the TV Shows from the Movies using SQL. Most movies are ove
 
 *We can see that Ozark Season 3: Su Casa Es Mi Casa (Episode 6) is the most watched TV Show episode in Profile_Name: MASTA YODA in the Country: US in terms of hours*
 
-![image](https://user-images.githubusercontent.com/30465635/208797188-e304fad9-e355-44fa-a780-d5f02ea10fb5.png)
-
+![updated_tv_show](https://user-images.githubusercontent.com/30465635/214454102-fef15d4e-126f-407f-8608-5e71ce384f76.PNG)
