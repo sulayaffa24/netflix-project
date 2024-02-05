@@ -1,4 +1,4 @@
-# netflix-project
+# Netflix SQL and Tableau Project 
 >Downloaded my personal Netflix data to analyze movies and tv shows screen time
 
 I got the idea from a DataQuest email I received a while ago, where you can download your personal Netflix streaming history data. So I wanted to analyze how many hours were spent watching Movies and TV Shows per Profile by downloading the data and uploading it on BigQuery and visualizing it on PowerBI
@@ -25,9 +25,9 @@ Once you receive the file unzip the folder and you will find multiple folders un
 - Latest_Bookmark
 - Country
 
-### Exploratory data analysis
+### Data Analysis
 
-I wanted to seperate the TV Shows from the Movies using SQL. Most movies are over an hour and most TV Shows are about 45 minutes long, but that is not the case every time and there are times where you don't complete a movie or a TV Show. I had to do exploratory data analysis using SQL to find all the TV Shows and Movies and categorize them in a column called Entertainment_Type. There were no TIME_FUNCTION in BigQuery to add the time duration of each tv show or movie streamed, therefore I extracted the hour, minute, seconds and created a column for each them. Converted the hours and seconds to minutes and created a new column called total_running_minutes. In PowerBI I transformed the total_running_minutes to total_hours in a seperate column.
+I wanted to separate the TV Shows from the Movies using SQL. Most movies are over an hour and most TV Shows are about 45 minutes long, but that is not the case every time and there are times when you don't complete a movie or a TV Show. I had to do exploratory data analysis using SQL to find all the TV Shows and Movies and categorize them in a column called Entertainment_Type. There was no TIME_FUNCTION in BigQuery to add the time duration of each TV show or movie streamed, therefore I extracted the hour, minute, and seconds and created a column for each of them. Converted the hours and seconds to minutes and created a new column called total_running_minutes. In PowerBI I transformed the total_running_minutes to total_hours in a separate column.
 
 ### Visualizations
 
