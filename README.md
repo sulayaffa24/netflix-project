@@ -29,15 +29,34 @@ Once you receive the file unzip the folder and you will find multiple folders un
 
 I wanted to separate the TV Shows from the Movies using SQL. Most movies are over an hour and most TV Shows are about 45 minutes long, but that is not the case every time and there are times when you don't complete a movie or a TV Show. I had to do exploratory data analysis using SQL to find all the TV Shows and Movies and categorize them in a column called Entertainment_Type. There was no TIME_FUNCTION in BigQuery to add the time duration of each TV show or movie streamed, therefore I extracted the hour, minute, and seconds and created a column for each of them. Converted the hours and seconds to minutes and created a new column called total_running_minutes. In PowerBI I transformed the total_running_minutes to total_hours in a separate column.
 
-### Visualizations
+```sql
+SELECT Profile_Name,
+       Country,
+       Start_Time,
+       Device_type,
+       EXTRACT(YEAR FROM Start_Time) AS Year,
+       EXTRACT(MONTH FROM Start_Time) AS Month,
+       Title, 
+       Duration,
+       EXTRACT(HOUR FROM Duration) AS Hour,
+       EXTRACT(MINUTE FROM Duration) AS Minute,
+       EXTRACT(SECOND FROM Duration) AS Second,
+       CASE
+              WHEN CONTAINS_SUBSTR(Title, 'Episode') THEN 'TV Show' -- All TV Show had Episode in the Title Column
+              WHEN CONTAINS_SUBSTR(Title, 'Trailer') THEN 'Trailer' -- Digging into the data you find Trailers in the Title Column
+              WHEN CONTAINS_SUBSTR(Title, 'Teaser') THEN 'Teaser' -- Digging into the data you find Teasers in the Title Column
+              WHEN CONTAINS_SUBSTR(Title, 'Bonus') THEN 'Bonus' -- Digging into the data you find Bonus in the Title Column
+              WHEN CONTAINS_SUBSTR(Title, 'Recap') THEN 'Recap' -- Digging into the data you find Recap in the Title Column
+              WHEN CONTAINS_SUBSTR(Title, 'hook') OR CONTAINS_SUBSTR(Title, '_') OR CONTAINS_SUBSTR(Title, 'Clip') THEN 'Hook/Clip' -- Found some Hooks and clips as well
+              ELSE 'Movie' 
+              END AS Entertainment,
+      ROUND((EXTRACT(HOUR FROM Duration) * 60) + (EXTRACT(MINUTE FROM Duration)) + (EXTRACT(SECOND FROM Duration) / 60), 2) AS total_minutes -- Calculate the total minutes
+FROM `[your_project_number].netflix_data.netflix_activity`
+
+```
+
+### Visualizations (Incoming.....)
 
 **Here are the visualizations I created:**
 
-*We can see that Don't Blame the Kid is the most watched Movie in Profile_Name: Sulayman in the Country: US in terms of hours*
 
-![image](https://user-images.githubusercontent.com/30465635/208797005-1c5ec96e-becf-41f1-8d03-d6dd2b966abc.png)
-
-
-*We can see that Ozark Season 3: Su Casa Es Mi Casa (Episode 6) is the most watched TV Show episode in Profile_Name: MASTA YODA in the Country: US in terms of hours*
-
-![updated_tv_show](https://user-images.githubusercontent.com/30465635/214454102-fef15d4e-126f-407f-8608-5e71ce384f76.PNG)
