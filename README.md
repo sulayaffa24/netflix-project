@@ -65,11 +65,11 @@ FROM `[your_project_number].netflix_data.netflix_activity`
 
 ![image](https://github.com/sulayaffa24/netflix-project/assets/30465635/4a37cccf-5b28-4d10-9f24-322546280415)
 
-[Movie Dashboard](https://public.tableau.com/app/profile/sulayman.yaffa/viz/PersonalMovieNetflixData/Dashboard1)
+Link to the dashboard [Movie Dashboard](https://public.tableau.com/app/profile/sulayman.yaffa/viz/PersonalMovieNetflixData/Dashboard1)
 
 
 **Time Spent Watching TV Shows**
 
 ![image](https://github.com/sulayaffa24/netflix-project/assets/30465635/8bfe8725-08be-4c84-a5d4-72263cb08e62)
 
-[TV Show Dashboard](https://public.tableau.com/app/profile/sulayman.yaffa/viz/PersonalTVShowNetflixData/Dashboard2)
+Link to the dashboard [TV Show Dashboard](https://public.tableau.com/app/profile/sulayman.yaffa/viz/PersonalTVShowNetflixData/Dashboard2)
